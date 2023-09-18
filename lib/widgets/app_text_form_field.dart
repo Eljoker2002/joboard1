@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../core/app_colors.dart';
 
 class AppTextFormField extends StatelessWidget {
-  final IconData icon;
+  final IconData? icon;
   final String text;
   final void Function(String?)? onSaved;
   final void Function()? onTap;
@@ -11,7 +11,7 @@ class AppTextFormField extends StatelessWidget {
     super.key,
     this.onTap,
     required this.onSaved,
-    required this.icon,
+    this.icon,
     required this.text,
   });
 
