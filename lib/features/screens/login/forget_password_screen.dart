@@ -62,7 +62,9 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     hintStyle: TextStyle(
                       fontSize: 20,
                       color: Colors.grey,
+
                     ),
+
                   ),
                 ),
                 SizedBox(height: 56),
