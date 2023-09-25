@@ -8,4 +8,5 @@ class AppColors {
   static const Color purple = Color(0xFF0737E3);
   static const Color black = Color(0xFF000000);
   static const Color blue =Color(0xFF0A32E3);
+  static const Color tBlue =Color(0xFF9747FF);
 }
