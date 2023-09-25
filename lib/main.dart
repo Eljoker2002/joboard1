@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:joboard1/features/screens/login/enter_otp_screen.dart';
-
-import 'features/screens/login/forget_password_screen.dart';
+import 'package:joboard1/features/screens/who_are_you_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: EnterOtp(),
+      home: WhoScreen(),
     );
   }
 }

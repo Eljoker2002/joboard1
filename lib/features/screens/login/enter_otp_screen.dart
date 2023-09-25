@@ -21,13 +21,11 @@ class _EnterOtpState extends State<EnterOtp> {
         backgroundColor: Colors.white,
         elevation: 0,
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Image(
               image: AssetImage("assets/images/digit.png"),
-              width: 200,
-              height: 270,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 40),
@@ -68,14 +66,15 @@ class _EnterOtpState extends State<EnterOtp> {
               height: 37,
               color: AppColors.blue,
               child: Center(
-                  child: Text(
-                "Submit",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 22,
-                  color: AppColors.white,
+                child: Text(
+                  "Submit",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 22,
+                    color: AppColors.white,
+                  ),
                 ),
-              )),
+              ),
             ),
           ],
         ),
