@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:joboard1/core/app_colors.dart';
+import 'package:joboard1/core/dimensions/dimensions.dart';
 import 'package:joboard1/widgets/app_text.dart';
 
 class AdvertiserProfileScreen extends StatefulWidget {
@@ -20,58 +21,69 @@ class _AdvertiserProfileScreenState extends State<AdvertiserProfileScreen> {
       body: Row(
         children: [
           Container(
-            width: 131,
+            width: 131.width,
             color: AppColors.blue,
             child: Stack(
               children: [
                 Image.asset(
                   "assets/images/advertiser_profile_image.png",
+                  width: double.infinity,
+                  fit: BoxFit.cover,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(
-                    top: 16,
-                    left: 16.0,
+                  padding: EdgeInsets.only(
+                    top: 16.height,
                   ),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 45),
-                      AppText(
-                        title: "JoBoard",
-                        color: AppColors.tBlue,
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
+                      SizedBox(height: 45.height),
+                      Padding(
+                        padding: EdgeInsets.only(left: 15.width),
+                        child: AppText(
+                          title: "JoBoard",
+                          color: AppColors.tBlue,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                      SizedBox(height: 120),
-                      Row(
-                        children: [
-                          AppText(
-                            title: "$value",
-                            color: AppColors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          SizedBox(width: 15),
-                          Container(
-                            width: 66,
-                            height: 33,
-                            decoration: BoxDecoration(
+                      SizedBox(height: 120.height),
+                      Padding(
+                        padding:
+                            EdgeInsets.only(right: 13.width, left: 17.width),
+                        child: Row(
+                          children: [
+                            AppText(
+                              title: value ? "ON" : "OFF",
+                              fontSize: 18,
                               color: AppColors.white,
-                              borderRadius: BorderRadius.circular(16),
+                              fontWeight: FontWeight.bold,
                             ),
-                            child: Transform.scale(
-                              scale: 1.5,
-                              child: Switch(
-                                inactiveTrackColor: AppColors.white,
-                                value: value,
-                                onChanged: (v) {
-                                  value = v;
-                                  setState(() {});
-                                },
-                                activeColor: AppColors.tBlue,
-                                activeTrackColor: Colors.white,
+                            Spacer(),
+                            Container(
+                              width: 65.width,
+                              height: 33.height,
+                              decoration: BoxDecoration(
+                                color: AppColors.white,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: Transform.scale(
+                                scale: 1.5,
+                                child: Switch(
+                                  activeColor: AppColors.tBlue,
+                                  activeTrackColor: AppColors.white,
+                                  inactiveThumbColor: AppColors.lightGray,
+                                  inactiveTrackColor: AppColors.white,
+                                  value: value,
+                                  onChanged: (v) {
+                                    value = v;
+                                    setState(() {});
+                                  },
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ],
                   ),
