@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:joboard1/features/screens/login/login_screen.dart';
+
+import 'features/screens/section_5/advertiser_profile/screen.dart';
 
 void main() async {
   await ScreenUtil.ensureScreenSize();
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         return child!;
       },
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: AdvertiserProfileScreen(),
     );
   }
 }

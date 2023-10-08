@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:joboard1/features/screens/login/login_screen.dart';
+import 'package:joboard1/features/screens/register/advertiser_register_screen.dart';
+import 'package:joboard1/features/screens/register/seeker_register_screen.dart';
 import 'package:joboard1/widgets/app_button.dart';
 
 class WhoScreen extends StatefulWidget {
@@ -90,7 +93,8 @@ class _WhoScreenState extends State<WhoScreen> {
               ),
               AppButton(
                 title: "Next",
-                onTap: () {},
+                onTap: () {
+                },
               ),
             ],
           ),
