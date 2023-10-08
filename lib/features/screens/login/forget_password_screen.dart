@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:joboard1/core/app_colors.dart';
 import 'package:joboard1/widgets/app_button.dart';
 import 'package:joboard1/widgets/app_text.dart';
-import 'package:joboard1/widgets/app_text_form_field.dart';
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({Key? key}) : super(key: key);
@@ -62,18 +60,18 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     hintStyle: TextStyle(
                       fontSize: 20,
                       color: Colors.grey,
-
                     ),
-
                   ),
                 ),
                 SizedBox(height: 56),
                 AppButton(
                   fontSize: 18,
-                  onTap: (){},
+                  onTap: () {},
                   title: "Send 6 digit code",
                 ),
-                SizedBox(height: 120,),
+                SizedBox(
+                  height: 120,
+                ),
               ],
             ),
           ),
