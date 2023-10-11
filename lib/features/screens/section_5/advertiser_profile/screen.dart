@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:joboard1/core/app_colors.dart';
 import 'package:joboard1/core/dimensions/dimensions.dart';
+import 'package:joboard1/features/screens/section_5/advertiser_profile/widgets/custom%20Row.dart';
 import 'package:joboard1/widgets/app_text.dart';
 
 import 'widgets/custom_text_field.dart';
@@ -91,78 +92,19 @@ class _AdvertiserProfileScreenState extends State<AdvertiserProfileScreen> {
                             SizedBox(
                               height: 60.height,
                             ),
-                            Row(children: [
-                              Padding(
-                                padding: EdgeInsets.only(
-                                    right: 3.width, left: 17.width),
-                                child: Icon(
-                                  Icons.feedback_outlined,
-                                  color: AppColors.white,
-                                  size: 20,
-                                ),
-                              ),
-                              Text(
-                                "feedback",
-                                style: TextStyle(
-                                    color: AppColors.white, fontSize: 14),
-                              ),
-                            ]),
+                            CustomRow(text: "feedback",icon: Icons.feedback_outlined,),
                             SizedBox(
                               height: 60.height,
                             ),
-                            Row(children: [
-                              Padding(
-                                padding: EdgeInsets.only(
-                                    right: 3.width, left: 17.width),
-                                child: Icon(
-                                  Icons.notifications,
-                                  color: AppColors.white,
-                                  size: 24,
-                                ),
-                              ),
-                              Text(
-                                "Notifications",
-                                style: TextStyle(
-                                    color: AppColors.white, fontSize: 14),
-                              ),
-                            ]),
+                            CustomRow(text: "Notifications",icon: Icons.notifications,),
                             SizedBox(
                               height: 60.height,
                             ),
-                            Row(children: [
-                              Padding(
-                                padding: EdgeInsets.only(
-                                    right: 3.width, left: 17.width),
-                                child: Icon(
-                                  Icons.messenger_outline_outlined,
-                                  color: AppColors.white,
-                                ),
-                              ),
-                              Text(
-                                "messages",
-                                style: TextStyle(
-                                    color: AppColors.white, fontSize: 14),
-                              ),
-                            ]),
+                            CustomRow(text: "messages",icon: Icons.messenger_outline_outlined,),
                             SizedBox(
                               height: 60.height,
                             ),
-                            Row(children: [
-                              Padding(
-                                padding: EdgeInsets.only(
-                                    right: 3.width, left: 17.width),
-                                child: Icon(
-                                  Icons.logout_outlined,
-                                  color: AppColors.white,
-                                  size: 24,
-                                ),
-                              ),
-                              Text(
-                                "logout",
-                                style: TextStyle(
-                                    color: AppColors.white, fontSize: 14),
-                              ),
-                            ]),
+                            CustomRow(text: "logout",icon: Icons.logout,),
                           ],
                         ),
                       ),
@@ -335,3 +277,10 @@ class _AdvertiserProfileScreenState extends State<AdvertiserProfileScreen> {
 //     ),
 //   ],
 // ),
+class AdvertiserProfile extends StatelessWidget {
+  const AdvertiserProfile({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Row();
+  }
+}
