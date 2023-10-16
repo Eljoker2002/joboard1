@@ -26,17 +26,16 @@ class _InterestScreenState extends State<InterestScreen> {
           SizedBox(height: 60.height),
           Center(
             child: Container(
-                child: Text(
-              "What Are Your Interests ?",
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: AppColors.black),
-            )),
+              child: Text(
+                "What Are Your Interests ?",
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: AppColors.black),
+              ),
+            ),
           ),
-          SizedBox(
-            height: 5.height,
-          ),
+          SizedBox(height: 5.height),
           Center(
             child: Text(
               "Choose one from the categories",
@@ -83,19 +82,18 @@ class _InterestScreenState extends State<InterestScreen> {
                         )
                       ]),
                   child: Center(
-                      child: Text(
-                    "Translating",
-                    style: TextStyle(
-                      fontSize: 16,
+                    child: Text(
+                      "Translating",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
                     ),
-                  )),
+                  ),
                 ),
               ],
             ),
           ),
-          SizedBox(
-            height: 15.height,
-          ),
+          SizedBox(height: 15.height),
           Padding(
             padding: EdgeInsets.only(left: 35.width, top: 20.height),
             child: Row(
@@ -113,12 +111,13 @@ class _InterestScreenState extends State<InterestScreen> {
                         )
                       ]),
                   child: Center(
-                      child: Text(
-                    "web Design",
-                    style: TextStyle(
-                      fontSize: 16,
+                    child: Text(
+                      "web Design",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
                     ),
-                  )),
+                  ),
                 ),
                 SizedBox(
                   width: 55.width,
@@ -286,11 +285,11 @@ class _InterestScreenState extends State<InterestScreen> {
                       ]),
                   child: Center(
                       child: Text(
-                        "Mobile App",
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                      )),
+                    "Mobile App",
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  )),
                 ),
                 SizedBox(
                   width: 55.width,
@@ -321,26 +320,20 @@ class _InterestScreenState extends State<InterestScreen> {
           ),
           SizedBox(height: 50.height),
           Padding(
-            padding:EdgeInsets.only(left:120.width,right: 120.width),
+            padding: EdgeInsets.symmetric(horizontal: 118.width),
             child: Container(
-              width: 50.width,
-              height: 50.height,
+              height: 43.height,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30.0),
-                  color: AppColors.purple,
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.purple,
-                      spreadRadius: 4,
-                    )
-                  ]),
+                borderRadius: BorderRadius.circular(24.0),
+                color: AppColors.purple,
+              ),
               child: Center(
                 child: Text(
                   "Done",
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: AppColors.white
+                    color: AppColors.white,
                   ),
                 ),
               ),
